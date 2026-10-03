@@ -163,7 +163,7 @@ this.ppu =
             cycles <
             cyclesPerFrame
         ) {
-
+this.ppu.step(1);
             cycles +=
                 this.cpu.step();
         }
