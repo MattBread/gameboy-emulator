@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Boy Emulator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="emulator">
+
+        <h1>GAME BOY</h1>
+
+        <div class="screen-container">
+            <canvas id="screen" width="160" height="144"></canvas>
+        </div>
+
+        <div class="controls">
+
+            <div class="dpad">
+                <button>▲</button>
+
+                <div>
+                    <button>◀</button>
+                    <button>▼</button>
+                    <button>▶</button>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button>B</button>
+                <button>A</button>
+            </div>
+
+        </div>
+
+        <div class="system-buttons">
+            <button>SELECT</button>
+            <button>START</button>
+        </div>
+
+        <div class="rom-loader">
+
+            <label for="romInput">
+                Load Game Boy ROM
+            </label>
+
+            <input
+                type="file"
+                id="romInput"
+                accept=".gb,.gbc"
+            >
+
+            <p id="status">No ROM loaded</p>
+
+        </div>
+
+    </div>
+
+    <script src="js/emulator.js"></script>
+
+</body>
+</html>
