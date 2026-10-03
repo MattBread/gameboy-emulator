@@ -5,7 +5,10 @@
 class GameBoy {
 
     constructor() {
-
+this.ppu =
+    new GameBoyPPU(
+        this.memory
+    );
         // Create memory
         this.memory =
             new GameBoyMemory();
